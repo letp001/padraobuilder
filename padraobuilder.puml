@@ -1,0 +1,48 @@
+@startuml
+class padraobuilder.Lanchonete {
+- String nome
+- int cnpj
+- String enderecoLogradouro
+- int enderecoNumero
+- String enderecoBairro
+- String enderecoCidade
+- String enderecoUF
+- String cep
+- String celular
++ String getNome()
++ void setNome(String)
++ int getCnpj()
++ void setCnpj(int)
++ String getEnderecoLogradouro()
++ void setEnderecoLogradouro(String)
++ int getEnderecoNumero()
++ void setEnderecoNumero(int)
++ String getEnderecoBairro()
++ void setEnderecoBairro(String)
++ String getEnderecoCidade()
++ void setEnderecoCidade(String)
++ String getEnderecoUF()
++ void setEnderecoUF(String)
++ String getCep()
++ void setCep(String)
++ String getCelular()
++ void setCelular(String)
+}
+class padraobuilder.LanchoneteBuilder {
+- Lanchonete lanchonete
+- int cnpj
++ Lanchonete build()
++ int getCnpj()
++ String getNome()
++ LanchoneteBuilder setCnpj(int)
++ LanchoneteBuilder setNome(String)
++ LanchoneteBuilder setCnpj(String)
++ LanchoneteBuilder setEnderecoLogradouro(String)
++ LanchoneteBuilder setEnderecoNumero(int)
++ LanchoneteBuilder setEnderecoBairro(String)
++ LanchoneteBuilder setEnderecoCidade(String)
++ LanchoneteBuilder setEnderecoUF(String)
++ LanchoneteBuilder setCep(String)
++ LanchoneteBuilder setCelular(String)
+}
+@enduml
